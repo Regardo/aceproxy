@@ -39,8 +39,8 @@ RUN wget --no-check-certificate https://github.com/pepsik-kiev/HTTPAceProxy/arch
     rm -f /opt/HTTPAceProxy-master/plugins/frytv_plugin.py /opt/HTTPAceProxy-master/plugins/allfon_plugin.py /opt/HTTPAceProxy-master/plugins/torrenttelik_plugin.py
 
 
-ADD aceconfig.py /opt/HTTPAceProxy-master/aceconfig.py && \
-	p2pproxy_plugin.py /opt/HTTPAceProxy-master/plugins/p2pproxy_plugin.py
+ADD aceconfig.py /opt/HTTPAceProxy-master/aceconfig.py
+ADD p2pproxy_plugin.py /opt/HTTPAceProxy-master/plugins/p2pproxy_plugin.py
 
 EXPOSE 6878 62062 8000
 
